@@ -2,9 +2,10 @@
 
 Get the code from:
 
-`git clone <repo/branch name>`
+`git clone https://gitlab.com/sandhya.s.sugunan/tbchain.git`
 
-`cd tbDotsClient`https://gitlab.com/sandhya.s.sugunan/tbchain.git
+`cd tbDotsClient`
+
 `npm install`
 
 `ng build`
