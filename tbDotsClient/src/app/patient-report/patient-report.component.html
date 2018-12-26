@@ -1,0 +1,53 @@
+<div class="signup">
+    <div class="form" style="text-align: center"  > 
+        <div class="row" style="width:100%" >    
+            <div class="col-11">
+                <h3>Patient Report</h3>
+            </div>            
+        </div>
+
+        <!-- <div class="row">
+            <div class="col-11" style="text-align:left; height: 30px;"><b>Name</b><br /></div>
+        </div>
+        <div class="row"  *ngFor="let group of patientGroup" id={{group.UserName}}>
+            <div class="col-11" style="text-align:left; height: 30px;"><span>{{group.FullName}} </span> || <a href="#" routerLink="/report/details?id=[{{ group.UserName }}]">View Details</a><br /></div>
+        </div> -->
+
+        <div class="row">
+            <div class="col-11">
+                <label>Patient Name : </label>
+                <select (change) = "onChange($event)" name="patient1" [(ngModel)]="otpNo" >
+                    <option value=""> --- Select Patient --- </option>
+                    <option *ngFor="let group of patientGroup" value={{group.UserName}} >
+                        {{group.FullName}}
+                    </option>
+                </select>
+            </div>            
+        </div>
+
+        <div class="row">&nbsp;</div>
+
+        <div class="row">
+            <div class="col-11">
+                <label>Medicine Name : </label>
+                <select (change) = "onChange1($event)" name="med1" [(ngModel)]="med1" >
+                    <option value=""> --- Select Medicine --- </option>
+                    <option *ngFor="let group1 of medicineGroup" value={{group1.medid}} >
+                        {{group1.medid}}
+                    </option>
+                </select>
+            </div>            
+        </div>
+
+        <div class="row">&nbsp;</div>
+        
+        <div class="row" *ngFor="let group11 of medicineGroup1">
+            <div class="col-11">
+                <label>Medicine Id : {{ group11.medid }}</label>
+                <div>Medicine Name : {{ group11.Name }} </div>
+                <div>Medicine Combination : {{ group11.combination }}</div>
+            </div>            
+        </div>
+
+    </div>
+</div>

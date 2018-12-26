@@ -1,0 +1,26 @@
+<div class="signup">
+    <div class="form">  
+        <form class="bake">
+            <div class="row">
+                <div class="col-5 errmsg">  <br /> 
+                    <label id="lblName">{{errorMsg}}<br /><br /></label>   
+                </div>                
+            </div>
+            
+            <div class="row">
+                <div class="col-5">   
+                    <label for="lblmedid">Medicine ID</label>
+                </div>
+                <div class="col-5">
+                    <input [(ngModel)]="medid" name="medid" type="text" maxlength="60" style="width: 300px;" />
+                </div>                
+            </div> 
+
+            <div class="row">
+                <div class="col-5">   
+                    <button class="buttonClass" (click)="intakeSubmit($event)">Submit</button>
+                </div>                
+            </div>
+        </form> 
+    </div>
+</div>

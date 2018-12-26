@@ -1,0 +1,116 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;    
+}
+
+ul{
+    margin-left: 170px;
+    margin-right: 100px;
+    padding: 0px;
+    list-style: none;
+}
+
+ul li{
+    float: left;
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    opacity: .8;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;    
+    margin-right: 2px;
+}
+
+li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    background-color:#cecece;
+}
+
+li a:hover{
+    background-color: blue;
+}
+
+.form{
+    position: absolute;
+    z-index: 1;
+    background:#ffffff;
+    margin-top: 100px;
+    margin-bottom: 400px;
+    margin-left: 400px;
+    padding: 45px;
+    text-align: center;
+}
+
+.form input{
+    font-family: "Roboto",sans-serif;
+    outline: 1;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form button{
+    font-family: "Roboto",sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: rgb(22, 50, 207);
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#buttonDiv{
+    display: flex;
+}
+
+#buttonDiv .buttonClass{
+    font-family: "Roboto",sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: rgb(22, 50, 207);
+    width: 100px;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 3%;   
+}
+
+.form .login-form .button{
+    font-family: "Roboto",sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: rgb(20, 171, 197);
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form .REgister{
+    display: none;
+}
+
+.btn{
+    float:left;
+}
+
+.errmsg {
+    color: red;
+    font-weight: bold;
+}

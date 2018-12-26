@@ -1,0 +1,35 @@
+<div class="signup">
+    <div class="form">  
+        <form class="bake">
+            <div class="row">    
+                <div class="col-11">
+                    <h3>Manufacture Login</h3>
+                </div>            
+            </div>
+            <div class="row">
+                <div class="col-5 errmsg">  <br /> 
+                    <label id="lblName">{{errorMsg}}<br /><br /></label>   
+                </div>                
+            </div>
+            <div class="row">
+                <div class="col-5">   
+                    <label for="lblUserName">User Name</label></div>
+                <div class="col-5">
+                    <input [(ngModel)]="myUserName" name="myUserName" type="text" maxlength="60" style="width: 300px;" />
+                </div>                
+            </div>
+            <div class="row">
+                <div class="col-5">   
+                    <label for="lblPassword">Password</label></div>
+                <div class="col-5">
+                    <input [(ngModel)]="myPassword" name="myPassword" type="password" maxlength="60" style="width: 300px;" />
+                </div>                
+            </div>
+            <div class="row">
+                <div class="col-5">   
+                    <button (click)="login($event)">Login</button>
+                </div>                
+            </div>
+        </form> 
+    </div>
+</div>
