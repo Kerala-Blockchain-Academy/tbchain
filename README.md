@@ -2,7 +2,7 @@
 
 Get the code from:
 
-`git clone https://gitlab.com/sandhya.s.sugunan/tbchain.git`
+`git clone https://github.com/Kerala-Blockchain-Academy/tbchain`
 
 `cd tbDotsClient`
 
